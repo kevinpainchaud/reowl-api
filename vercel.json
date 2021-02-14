@@ -10,10 +10,10 @@
   ],
   "functions": {
     "api/matches.js": {
-      "includeFiles": "data/**"
+      "includeFiles": "{data,lib}/**"
     },
     "api/match/[cast]/[id].js": {
-      "includeFiles": "data/**"
+      "includeFiles": "{data,lib}/**"
     }
   }
 }
