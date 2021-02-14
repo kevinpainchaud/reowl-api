@@ -13,6 +13,7 @@ module.exports = async (req, res) => {
     );
   }
 
+  res.setHeader("Cache-Control", "s-maxage=120");
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(match));
 };
