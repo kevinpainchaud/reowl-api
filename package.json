@@ -3,7 +3,6 @@
   "description": "API used by the Reowl website",
   "scripts": {
     "start": "vercel dev --listen 5005",
-    "build": "esbuild api/*.js --bundle --platform=node --outdir=public/api",
     "lint": "eslint ."
   },
   "author": "Kévin Painchaud",
