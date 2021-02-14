@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
     req.query.exclude
   );
 
+  res.setHeader("Cache-Control", "s-maxage=120");
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(matches));
 };
