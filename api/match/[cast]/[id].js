@@ -4,13 +4,10 @@ const casts = require("../../../data/casts");
 
 module.exports = async (req, res) => {
   let match = {};
+  const cast = casts.find((cast) => cast.slug === req.query.cast);
 
-  if (casts.includes(req.query.cast)) {
-    match = await OwlWebsiteCrawler.getMatch(
-      Crawler,
-      req.query.cast,
-      req.query.id
-    );
+  if (cast) {
+    match = await OwlWebsiteCrawler.getMatch(Crawler, cast, req.query.id);
   }
 
   res.setHeader("Cache-Control", "s-maxage=120");
