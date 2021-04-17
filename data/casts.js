@@ -1,1 +1,1 @@
-module.exports = ["en-us" /* , "fr-fr" */];
+module.exports = ["en-us", "fr-fr"];
