@@ -6,7 +6,9 @@ module.exports = async (req, res) => {
   const matches = await OwlWebsiteCrawler.getMatches(
     Crawler,
     req.query.casts
-      ? allowedCasts.filter((cast) => req.query.casts.split(",").includes(cast))
+      ? allowedCasts.filter((cast) =>
+          req.query.casts.split(",").includes(cast.slug)
+        )
       : allowedCasts,
     req.query.limit,
     req.query.exclude
