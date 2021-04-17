@@ -1,5 +1,5 @@
 {
-  "name": "reowl-api-v3",
+  "name": "reowl-api",
   "description": "API used by the Reowl website",
   "scripts": {
     "start": "vercel dev --listen 5005",
