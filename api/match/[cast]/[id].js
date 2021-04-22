@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
     match = await OwlWebsiteCrawler.getMatch(Crawler, cast, req.query.id);
   }
 
-  res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate=3600");
+  res.setHeader("Cache-Control", "s-maxage=1, stale-while-revalidate=259200");
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(match));
 };
