@@ -12,7 +12,7 @@
     "api/matches.js": {
       "includeFiles": "{data,lib}/**"
     },
-    "api/match/[cast]/[id].js": {
+    "api/match/[id].js": {
       "includeFiles": "{data,lib}/**"
     }
   }
