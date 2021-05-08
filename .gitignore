@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,node
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,node
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,windows,node
 
 ### macOS ###
 # General
@@ -121,6 +121,14 @@ typings/
 .nuxt
 dist
 
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# rollup.js default build output
+dist/
+
 # Gatsby files
 .cache/
 # Comment in the public line in if your project uses Gatsby and not Next.js
@@ -145,8 +153,13 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# Temporary folders
+tmp/
+temp/
+
 ### VisualStudioCode ###
 .vscode/*
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -183,7 +196,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,node
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,windows,node
 
 ### Custom ###
-.vercel
+worker

@@ -1,13 +1,15 @@
 {
   "name": "reowl-api",
   "description": "API used by the Reowl website",
+  "author": "Kévin Painchaud",
+  "main": "index.js",
   "scripts": {
-    "start": "vercel dev --listen 5005",
+    "dev": "wrangler dev",
     "lint": "eslint ."
   },
-  "author": "Kévin Painchaud",
   "dependencies": {
-    "crawler": "^1.3.0"
+    "node-html-parser": "^3.2.0",
+    "worktop": "^0.6.2"
   },
   "devDependencies": {
     "eslint": "^7.20.0",
