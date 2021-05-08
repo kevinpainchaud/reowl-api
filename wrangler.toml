@@ -1,0 +1,13 @@
+type = 'webpack'
+name = "reowl-api-dev"
+account_id = 'c5854932d029f5805709e8a8d4feef3a'
+workers_dev = true
+vars = { ENVIRONMENT = "dev" }
+
+[env.staging]
+name = "reowl-api-staging"
+vars = { ENVIRONMENT = "staging" }
+
+[env.production]
+name = "reowl-api"
+vars = { ENVIRONMENT = "production" }

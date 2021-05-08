@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   DAL: "Dallas Fuel",
   ATL: "Atlanta Reign",
   BOS: "Boston Uprising",
