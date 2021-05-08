@@ -1,8 +1,14 @@
 import { Router } from "worktop";
+import * as CORS from "worktop/cors";
 import * as Cache from "worktop/cache";
 import OwlWebsiteCrawler from "./lib/owl-website-crawler";
 
 const API = new Router();
+
+API.prepare = CORS.preflight({
+  origin: "*", // allow any `Origin` to connect
+  methods: ["GET"],
+});
 
 API.add("GET", "/matches", async (req, res) => {
   const query = Object.fromEntries(req.query);
