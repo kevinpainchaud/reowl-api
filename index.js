@@ -24,7 +24,7 @@ API.add("GET", "/matches", async (req, res) => {
 API.add("GET", "/matches/:id", async (req, res) => {
   const match = await OwlWebsiteCrawler.getMatch(req.params.id);
 
-  res.setHeader("Cache-Control", "public, max-age=259200");
+  res.setHeader("Cache-Control", "public, max-age=60");
   res.send(200, match);
 });
 
